@@ -23,6 +23,78 @@
             "price": 6700,
             "image": "assets/images/MARBORO FILTER BLACK 20.png",
             "icon": "⌚"
+        },
+        {
+            "id": 4,
+            "name": "PRODUK 4",
+            "description": "DESKRIPSI PRODUK 4",
+            "price": 6700,
+            "image": "assets/images/PRODUK 4.png",
+            "icon": "📦"
+        },
+        {
+            "id": 5,
+            "name": "PRODUK 5",
+            "description": "DESKRIPSI PRODUK 5",
+            "price": 6700,
+            "image": "assets/images/PRODUK 5.png",
+            "icon": "📦"
+        },
+        {
+            "id": 6,
+            "name": "PRODUK 6",
+            "description": "DESKRIPSI PRODUK 6",
+            "price": 6700,
+            "image": "assets/images/PRODUK 6.png",
+            "icon": "📦"
+        },
+        {
+            "id": 7,
+            "name": "PRODUK 7",
+            "description": "DESKRIPSI PRODUK 7",
+            "price": 6700,
+            "image": "assets/images/PRODUK 7.png",
+            "icon": "📦"
+        },
+        {
+            "id": 8,
+            "name": "PRODUK 8",
+            "description": "DESKRIPSI PRODUK 8",
+            "price": 6700,
+            "image": "assets/images/PRODUK 8.png",
+            "icon": "📦"
+        },
+        {
+            "id": 9,
+            "name": "PRODUK 9",
+            "description": "DESKRIPSI PRODUK 9",
+            "price": 6700,
+            "image": "assets/images/PRODUK 9.png",
+            "icon": "📦"
+        },
+        {
+            "id": 10,
+            "name": "PRODUK 10",
+            "description": "DESKRIPSI PRODUK 10",
+            "price": 6700,
+            "image": "assets/images/PRODUK 10.png",
+            "icon": "📦"
+        },
+        {
+            "id": 11,
+            "name": "PRODUK 11",
+            "description": "DESKRIPSI PRODUK 11",
+            "price": 6700,
+            "image": "assets/images/PRODUK 11.png",
+            "icon": "📦"
+        },
+        {
+            "id": 12,
+            "name": "PRODUK 12",
+            "description": "DESKRIPSI PRODUK 12",
+            "price": 6700,
+            "image": "assets/images/PRODUK 12.png",
+            "icon": "📦"
         }
     ]
 }
