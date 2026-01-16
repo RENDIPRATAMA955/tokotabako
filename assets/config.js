@@ -1,8 +1,7 @@
-// Konfigurasi Toko - Edit sesuai kebutuhan
+// Konfigurasi Toko
 const CONFIG = {
     storeName: "JAken.tabako",
-    phoneAdmin: "6281234567890", // Ganti dengan nomor WA Anda (format: 628xxxx)
-    lineId: "id_line_anda", // Ganti dengan ID Line Anda
+    phoneAdmin: "6281990637492", // Nomor WA Admin (format: 62 + nomor)
     currency: "¥",
     locale: "ja-JP"
 };
