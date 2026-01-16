@@ -2,51 +2,27 @@
     "products": [
         {
             "id": 1,
-            "name": "Solana Saga 2.0",
-            "description": "Smartphone Web3 eksklusif dengan keamanan tingkat tinggi.",
-            "price": 9500000,
-            "image": "assets/images/phone.svg",
+            "name": "SURYA 16",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6700,
+            "image": "assets/images/SURYA 16.png",
             "icon": "📱"
         },
         {
             "id": 2,
-            "name": "Solana Audio Buds",
-            "description": "Kualitas audio premium dengan fitur noise cancelling.",
-            "price": 2200000,
-            "image": "assets/images/headphones.svg",
+            "name": "SAMPOERNA 16",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6700,
+            "image": "assets/images/SAMPOERNA 16.png",
             "icon": "🎧"
         },
         {
             "id": 3,
-            "name": "Solana Smart Watch",
-            "description": "Pantau crypto dan notifikasi di pergelangan tangan.",
-            "price": 3750000,
-            "image": "assets/images/smartwatch.svg",
+            "name": "MARBORO FILTER BLACK 20",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6700,
+            "image": "assets/images/MARBORO FILTER BLACK 20.png",
             "icon": "⌚"
-        },
-        {
-            "id": 4,
-            "name": "Solana Hoodie",
-            "description": "Hoodie eksklusif dengan logo Solana.",
-            "price": 850000,
-            "image": "assets/images/hoodie.svg",
-            "icon": "👕"
-        },
-        {
-            "id": 5,
-            "name": "Solana Cap",
-            "description": "Topi baseball dengan desain Solana.",
-            "price": 450000,
-            "image": "assets/images/cap.svg",
-            "icon": "🧢"
-        },
-        {
-            "id": 6,
-            "name": "Ledger Nano X",
-            "description": "Hardware wallet untuk keamanan crypto.",
-            "price": 2100000,
-            "image": "assets/images/ledger.svg",
-            "icon": "🔐"
         }
     ]
 }
