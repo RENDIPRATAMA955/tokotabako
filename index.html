@@ -9,215 +9,207 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
         body {
-            background-color: #0a0a0a;
+            background-color: #000;
             color: #fff;
             font-family: 'Inter', sans-serif;
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #14F195, #19C270);
+        .sol-gradient {
+            background: linear-gradient(90deg, #14F195, #9945FF);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .btn-primary {
-            background: linear-gradient(135deg, #14F195, #19C270);
+        .sol-btn {
+            background: linear-gradient(90deg, #14F195, #9945FF);
             color: #000;
-            font-weight: 600;
-            transition: all 0.2s;
+            font-weight: bold;
+            transition: opacity 0.2s;
         }
-        .btn-primary:hover {
+        .sol-btn:hover {
             opacity: 0.9;
-            transform: scale(1.02);
         }
         .product-card {
-            background: #141414;
+            background: #0f0f0f;
             border: 1px solid #222;
-            transition: all 0.3s;
-        }
-        .product-card:hover {
-            border-color: #14F195;
-            transform: translateY(-4px);
         }
         #cart-modal {
-            background: rgba(0,0,0,0.9);
-            backdrop-filter: blur(12px);
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(8px);
         }
     </style>
 </head>
 <body class="pb-24">
 
     <!-- Navigasi -->
-    <nav class="p-5 flex justify-between items-center max-w-6xl mx-auto sticky top-0 bg-black/80 backdrop-blur-md z-40 border-b border-gray-800">
-        <h1 class="text-xl font-bold tracking-tight">JAken<span class="gradient-text">.Tabako</span></h1>
-        <button onclick="toggleCart()" class="relative p-2.5 bg-white/10 rounded-full hover:bg-white/20 transition">
-            <span id="cart-count" class="absolute -top-1 -right-1 bg-[#14F195] text-black text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-            </svg>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 bg-black/50 backdrop-blur-md z-40">
+        <h1 class="text-2xl font-bold tracking-tight">JAken<span class="sol-gradient">.Tabako</span></h1>
+        <button onclick="toggleCart()" class="relative p-2 bg-white/10 rounded-full">
+            <span id="cart-count" class="absolute -top-1 -right-1 bg-green-400 text-black text-[10px] font-bold px-1.5 rounded-full">0</span>
+            🛒
         </button>
     </nav>
 
     <!-- Header -->
-    <header class="py-10 text-center px-4">
-        <h2 class="text-3xl font-black mb-3">Pesan <span class="gradient-text">Rokok</span></h2>
-        <p class="text-gray-400 text-sm">Pilih barang, masukkan keranjang, dan pesan via WhatsApp</p>
+    <header class="py-12 text-center px-4">
+        <h2 class="text-4xl font-black mb-4">Pesan Produk <span class="sol-gradient">Rokok</span></h2>
+        <p class="text-gray-400 text-sm">Pilih barang, masukkan keranjang, dan pesan via WhatsApp.</p>
     </header>
 
     <!-- Daftar Produk -->
-    <main class="max-w-6xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Produk 1 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/SURYA 16.png" alt="SURYA 16" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>🚬</span>'">
             </div>
-            <h3 class="font-bold text-lg">SURYA 16</h3>
+            <h3 class="font-bold text-lg item-name">SURYA 16</h3>
             <p class="text-gray-500 text-xs mb-3">ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('SURYA 16', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('SURYA 16', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 2 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/SAMPOERNA 16.png" alt="SAMPOERNA 16" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>🚬</span>'">
             </div>
-            <h3 class="font-bold text-lg">SAMPOERNA 16</h3>
+            <h3 class="font-bold text-lg item-name">SAMPOERNA 16</h3>
             <p class="text-gray-500 text-xs mb-3">ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('SAMPOERNA 16', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('SAMPOERNA 16', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 3 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/MARBORO FILTER BLACK 20.png" alt="MARBORO FILTER BLACK 20" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>🚬</span>'">
             </div>
-            <h3 class="font-bold text-lg">MARBORO FILTER BLACK 20</h3>
+            <h3 class="font-bold text-lg item-name">MARBORO FILTER BLACK 20</h3>
             <p class="text-gray-500 text-xs mb-3">ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('MARBORO FILTER BLACK 20', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('MARBORO FILTER BLACK 20', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 4 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 4.png" alt="PRODUK 4" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 4</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 4</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 4</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 4', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 4', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 5 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 5.png" alt="PRODUK 5" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 5</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 5</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 5</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 5', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 5', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 6 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 6.png" alt="PRODUK 6" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 6</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 6</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 6</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 6', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 6', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 7 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 7.png" alt="PRODUK 7" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 7</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 7</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 7</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 7', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 7', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 8 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 8.png" alt="PRODUK 8" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 8</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 8</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 8</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 8', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 8', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 9 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 9.png" alt="PRODUK 9" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 9</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 9</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 9</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 9', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 9', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 10 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 10.png" alt="PRODUK 10" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 10</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 10</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 10</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 10', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 10', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 11 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 11.png" alt="PRODUK 11" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 11</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 11</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 11</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 11', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 11', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
 
         <!-- Produk 12 -->
-        <div class="product-card p-4 rounded-xl">
-            <div class="aspect-square bg-gray-900 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <div class="product-card p-5 rounded-2xl">
+            <div class="aspect-square bg-gray-900 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="assets/images/PRODUK 12.png" alt="PRODUK 12" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-5xl\'>📦</span>'">
             </div>
-            <h3 class="font-bold text-lg">PRODUK 12</h3>
+            <h3 class="font-bold text-lg item-name">PRODUK 12</h3>
             <p class="text-gray-500 text-xs mb-3">DESKRIPSI PRODUK 12</p>
             <div class="flex justify-between items-center">
-                <span class="font-bold text-[#14F195]">¥6,700</span>
-                <button onclick="addToCart('PRODUK 12', 6700)" class="btn-primary text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
+                <span class="font-bold text-green-400 item-price">¥6,700</span>
+                <button onclick="addToCart('PRODUK 12', 6700)" class="sol-btn text-black font-bold text-xs px-4 py-2 rounded-lg">+ Keranjang</button>
             </div>
         </div>
     </main>
@@ -225,21 +217,20 @@
     <!-- Modal Keranjang -->
     <div id="cart-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
         <div class="bg-[#111] border border-gray-800 w-full max-w-md rounded-2xl overflow-hidden shadow-2xl">
-            <div class="p-5 border-b border-gray-800 flex justify-between items-center">
-                <h3 class="text-lg font-bold">Keranjang</h3>
-                <button onclick="toggleCart()" class="text-gray-500 hover:text-white text-xl">×</button>
+            <div class="p-6 border-b border-gray-800 flex justify-between items-center">
+                <h3 class="text-xl font-bold">Keranjang Anda</h3>
+                <button onclick="toggleCart()" class="text-gray-500 hover:text-white">✕</button>
             </div>
-            <div id="cart-items" class="p-5 max-h-64 overflow-y-auto space-y-3">
+            <div id="cart-items" class="p-6 max-h-80 overflow-y-auto space-y-4">
                 <p class="text-gray-500 text-center">Keranjang kosong</p>
             </div>
-            <div class="p-5 bg-black/40 border-t border-gray-800">
-                <div class="flex justify-between mb-4">
-                    <span class="text-gray-400">Total:</span>
-                    <span id="total-price" class="font-bold text-xl text-[#14F195]">¥0</span>
+            <div class="p-6 bg-black/40 border-t border-gray-800">
+                <div class="flex justify-between mb-6">
+                    <span class="text-gray-400">Total Pembayaran:</span>
+                    <span id="total-price" class="font-bold text-xl text-green-400">¥0</span>
                 </div>
-                <button onclick="checkout()" class="w-full btn-primary py-3 rounded-xl font-bold flex items-center justify-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Pesan via WhatsApp
+                <button onclick="checkout()" class="w-full sol-btn py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+                    WhatsApp
                 </button>
             </div>
         </div>
@@ -252,7 +243,7 @@
         function addToCart(name, price) {
             cart.push({ name, price });
             updateCartUI();
-            showToast(name + ' ditambahkan ke keranjang');
+            alert(name + " ditambahkan ke keranjang!");
         }
 
         function removeFromCart(index) {
@@ -276,12 +267,12 @@
             cartItems.innerHTML = cart.map((item, index) => {
                 total += item.price;
                 return `
-                    <div class="flex justify-between items-center p-3 bg-white/5 rounded-lg">
+                    <div class="flex justify-between items-center p-2 hover:bg-white/5 rounded-lg">
                         <div>
                             <p class="font-medium text-sm">${item.name}</p>
                             <p class="text-xs text-gray-500">¥${item.price.toLocaleString('ja-JP')}</p>
                         </div>
-                        <button onclick="removeFromCart(${index})" class="text-red-400 hover:text-red-300 text-xs px-2 py-1">Hapus</button>
+                        <button onclick="removeFromCart(${index})" class="text-red-500 hover:text-red-400 text-xs px-2 py-1 rounded">Hapus</button>
                     </div>
                 `;
             }).join('');
@@ -294,10 +285,7 @@
         }
 
         function checkout() {
-            if (cart.length === 0) {
-                showToast('Keranjang kosong!', 'error');
-                return;
-            }
+            if (cart.length === 0) return alert("Keranjang kosong!");
 
             let total = 0;
             let itemText = "";
@@ -309,19 +297,6 @@
             const message = `Halo Admin JAken.tabako, saya ingin memesan:\n\n${itemText}\n*Total: ¥${total.toLocaleString('ja-JP')}*\n\nMohon informasi pembayaran. Terima kasih!`;
             
             window.open(`https://wa.me/${PHONE_ADMIN}?text=${encodeURIComponent(message)}`, '_blank');
-        }
-
-        function showToast(message, type = 'success') {
-            const toast = document.createElement('div');
-            toast.className = `fixed bottom-6 left-1/2 transform -translate-x-1/2 px-5 py-3 rounded-lg shadow-lg z-50 font-medium ${type === 'success' ? 'bg-[#14F195] text-black' : 'bg-red-500 text-white'}`;
-            toast.textContent = message;
-            document.body.appendChild(toast);
-            
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                toast.style.transform = 'translateX(-50%) translateY(20px)';
-                setTimeout(() => toast.remove(), 300);
-            }, 2000);
         }
 
         // Close modal when clicking outside
