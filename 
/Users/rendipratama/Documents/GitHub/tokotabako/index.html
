@@ -13,18 +13,14 @@
             --sol-end: #9945FF;
         }
         
-        * {
-            -webkit-tap-highlight-color: transparent;
-        }
-        
         body {
             background-color: #000;
             color: #fff;
+            font-family: 'Inter', sans-serif;
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
         
-        /* Solana Gradient Text */
         .sol-gradient-text {
             background: linear-gradient(135deg, var(--sol-start), var(--sol-end));
             -webkit-background-clip: text;
@@ -32,12 +28,10 @@
             background-clip: text;
         }
         
-        /* Solana Gradient Background */
         .sol-gradient-bg {
             background: linear-gradient(135deg, var(--sol-start), var(--sol-end));
         }
         
-        /* iOS 26 Glassmorphism Navigation */
         .ios-nav {
             background: rgba(30, 30, 32, 0.7);
             backdrop-filter: blur(40px) saturate(180%);
@@ -45,7 +39,6 @@
             border-bottom: 0.5px solid rgba(84, 84, 88, 0.5);
         }
         
-        /* Squircle Cards */
         .ios-card {
             background: rgba(28, 28, 30, 0.95);
             border-radius: 24px;
@@ -64,7 +57,6 @@
             transform: scale(0.98);
         }
         
-        /* iOS Button with Solana Gradient */
         .ios-btn {
             background: linear-gradient(135deg, var(--sol-start), var(--sol-end));
             color: #000;
@@ -83,7 +75,6 @@
             transform: scale(0.95);
         }
         
-        /* iOS Modal */
         .ios-modal {
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(50px);
@@ -108,14 +99,12 @@
             }
         }
         
-        /* Product Image Container */
         .ios-image-container {
             background: linear-gradient(135deg, #1C1C1E 0%, #2C2C2E 100%);
             border-radius: 20px;
             overflow: hidden;
         }
         
-        /* Cart Badge with Solana Gradient */
         .ios-badge {
             background: linear-gradient(135deg, var(--sol-start), var(--sol-end));
             color: #000;
@@ -129,7 +118,6 @@
             justify-content: center;
         }
         
-        /* Notification Toast */
         .ios-toast {
             background: rgba(30, 30, 32, 0.95);
             backdrop-filter: blur(40px);
@@ -155,7 +143,6 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        /* Price highlight with Solana */
         .ios-price {
             background: linear-gradient(135deg, var(--sol-start), var(--sol-end));
             -webkit-background-clip: text;
@@ -164,15 +151,8 @@
             font-weight: 700;
         }
         
-        /* Section header */
         .ios-header {
             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
-        }
-        
-        /* Delete button */
-        .ios-delete {
-            color: #FF453A;
-            transition: opacity 0.2s;
         }
         
         .ios-delete:active {
@@ -205,7 +185,7 @@
     </header>
 
     <!-- Products Grid -->
-    <main class="max-w-7xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+    <main class="max-w-4xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-3 gap-4">
     </main>
 
     <!-- iOS Modal Cart -->
@@ -232,9 +212,11 @@
                     Pesan via WhatsApp
                 </button>
             </div>
+        </div>
     </div>
 
     <script src="assets/config.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
+
