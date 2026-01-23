@@ -2,99 +2,331 @@
     "products": [
         {
             "id": 1,
-            "name": "SURYA 16",
+            "name": "Sampoerna Mild",
             "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
-            "price": 6700,
-            "image": "assets/images/SURYA 16.png",
-            "icon": "📱"
+            "price": 6500,
+            "image": "assets/images/SAMPOERNA MILD.png",
+            "icon": "🚬"
         },
         {
             "id": 2,
-            "name": "SAMPOERNA 16",
+            "name": "Sampoerna Splash A",
             "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
-            "price": 6700,
-            "image": "assets/images/SAMPOERNA 16.png",
-            "icon": "🎧"
+            "price": 6300,
+            "image": "assets/images/SAMPOERNA SPLASH A.png",
+            "icon": "🚬"
         },
         {
             "id": 3,
-            "name": "MARBORO FILTER BLACK 20",
+            "name": "Sampoerna Splash B",
             "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
-            "price": 6700,
-            "image": "assets/images/MARBORO FILTER BLACK 20.png",
-            "icon": "⌚"
+            "price": 6300,
+            "image": "assets/images/SAMPOERNA SPLASH B.png",
+            "icon": "🚬"
         },
         {
             "id": 4,
-            "name": "PRODUK 4",
-            "description": "DESKRIPSI PRODUK 4",
-            "price": 6700,
-            "image": "assets/images/PRODUK 4.png",
-            "icon": "📦"
+            "name": "Sampoerna Menthol",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6500,
+            "image": "assets/images/SAMPOERNA MENTHOL.png",
+            "icon": "🍃"
         },
         {
             "id": 5,
-            "name": "PRODUK 5",
-            "description": "DESKRIPSI PRODUK 5",
-            "price": 6700,
-            "image": "assets/images/PRODUK 5.png",
-            "icon": "📦"
+            "name": "Sampoerna Evo",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6900,
+            "image": "assets/images/SAMPOERNA EVO.png",
+            "icon": "🚬"
         },
         {
             "id": 6,
-            "name": "PRODUK 6",
-            "description": "DESKRIPSI PRODUK 6",
-            "price": 6700,
-            "image": "assets/images/PRODUK 6.png",
-            "icon": "📦"
+            "name": "Samsoe Refill",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6100,
+            "image": "assets/images/SAMSOE REFILL.png",
+            "icon": "🚬"
         },
         {
             "id": 7,
-            "name": "PRODUK 7",
-            "description": "DESKRIPSI PRODUK 7",
-            "price": 6700,
-            "image": "assets/images/PRODUK 7.png",
-            "icon": "📦"
+            "name": "Marlboro Black Filter",
+            "description": "ROKOK FILTER ISI 20 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6900,
+            "image": "assets/images/MARBORO BLACK FILTER.png",
+            "icon": "🚬"
         },
         {
             "id": 8,
-            "name": "PRODUK 8",
-            "description": "DESKRIPSI PRODUK 8",
-            "price": 6700,
-            "image": "assets/images/PRODUK 8.png",
-            "icon": "📦"
+            "name": "Surya 16 Coklat",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6600,
+            "image": "assets/images/SURYA 16 COKLAT.png",
+            "icon": "🚬"
         },
         {
             "id": 9,
-            "name": "PRODUK 9",
-            "description": "DESKRIPSI PRODUK 9",
-            "price": 6700,
-            "image": "assets/images/PRODUK 9.png",
-            "icon": "📦"
+            "name": "Surya 16 Merah",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6600,
+            "image": "assets/images/SURYA 16 MERAH.png",
+            "icon": "🚬"
         },
         {
             "id": 10,
-            "name": "PRODUK 10",
-            "description": "DESKRIPSI PRODUK 10",
-            "price": 6700,
-            "image": "assets/images/PRODUK 10.png",
-            "icon": "📦"
+            "name": "Surya 12",
+            "description": "ROKOK FILTER ISI 12 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6100,
+            "image": "assets/images/SURYA 12.png",
+            "icon": "🚬"
         },
         {
             "id": 11,
-            "name": "PRODUK 11",
-            "description": "DESKRIPSI PRODUK 11",
-            "price": 6700,
-            "image": "assets/images/PRODUK 11.png",
-            "icon": "📦"
+            "name": "Surya Eksklusif",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 7000,
+            "image": "assets/images/SURYA EKSKLUSIF.png",
+            "icon": "🚬"
         },
         {
             "id": 12,
-            "name": "PRODUK 12",
-            "description": "DESKRIPSI PRODUK 12",
+            "name": "Esse Juicy",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 7000,
+            "image": "assets/images/ESSE JUICY.png",
+            "icon": "💜"
+        },
+        {
+            "id": 13,
+            "name": "Esse Double Click",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 7000,
+            "image": "assets/images/ESSE DOUBLE CLICK.png",
+            "icon": "💜"
+        },
+        {
+            "id": 14,
+            "name": "Esse Berry Pop",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6500,
+            "image": "assets/images/ESSE BERRY POP.png",
+            "icon": "💜"
+        },
+        {
+            "id": 15,
+            "name": "Esse Double Pop",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
             "price": 6700,
-            "image": "assets/images/PRODUK 12.png",
-            "icon": "📦"
+            "image": "assets/images/ESSE DOUBLE POP.png",
+            "icon": "💜"
+        },
+        {
+            "id": 16,
+            "name": "Esse Punch Pop",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6700,
+            "image": "assets/images/ESSE PUNCH POP.png",
+            "icon": "💜"
+        },
+        {
+            "id": 17,
+            "name": "Esse Shuffle Pop",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 7000,
+            "image": "assets/images/ESSE SHUFFLE POP.png",
+            "icon": "💜"
+        },
+        {
+            "id": 18,
+            "name": "Djarum 76",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/DJARUM 76.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 19,
+            "name": "Djarum 76 Mangga",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5100,
+            "image": "assets/images/DJARUM 76 MANGGA.png",
+            "icon": "💚"
+        },
+        {
+            "id": 20,
+            "name": "Djarum 76 Mocca",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/DJARUM 76 MOCCA.png",
+            "icon": "☕"
+        },
+        {
+            "id": 21,
+            "name": "Djarum 76 Extra",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/DJARUM 76 EXTRA.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 22,
+            "name": "Dunhill Black Filter",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6300,
+            "image": "assets/images/DUNHILL BLACK FILTER.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 23,
+            "name": "Dunhill Putih",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5800,
+            "image": "assets/images/DUNHILL PUTIH.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 24,
+            "name": "La Ice Mango",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6400,
+            "image": "assets/images/LA ICE MANGO.png",
+            "icon": "🥭"
+        },
+        {
+            "id": 25,
+            "name": "La Bold",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6900,
+            "image": "assets/images/LA BOLD.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 26,
+            "name": "La Ice Purple",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6400,
+            "image": "assets/images/LA ICE PURPLE.png",
+            "icon": "💜"
+        },
+        {
+            "id": 27,
+            "name": "Win Click",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6300,
+            "image": "assets/images/WIN CLICK.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 28,
+            "name": "Win Filter",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6300,
+            "image": "assets/images/WIN FILTER.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 29,
+            "name": "Win Bold",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6300,
+            "image": "assets/images/WIN BOLD.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 30,
+            "name": "Juara Jambu",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/JUARA JAMBU.png",
+            "icon": "🍈"
+        },
+        {
+            "id": 31,
+            "name": "Juara Filter",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6000,
+            "image": "assets/images/JUARA FILTER.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 32,
+            "name": "Juara Teh",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/JUARA TEH.png",
+            "icon": "🍵"
+        },
+        {
+            "id": 33,
+            "name": "Sukun 16",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6000,
+            "image": "assets/images/SUKUN 16.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 34,
+            "name": "Djarum Black",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6400,
+            "image": "assets/images/DJARUM BLACK.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 35,
+            "name": "Djarum Black Cappuccino",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6400,
+            "image": "assets/images/DJARUM BLACK CAPPUCCINO.png",
+            "icon": "☕"
+        },
+        {
+            "id": 36,
+            "name": "Djarum Espresso",
+            "description": "ROKOK KRETEK ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 5300,
+            "image": "assets/images/DJARUM ESPRESSO.png",
+            "icon": "☕"
+        },
+        {
+            "id": 37,
+            "name": "Gudang Garam Filter",
+            "description": "ROKOK KRETEK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6100,
+            "image": "assets/images/GUDANG GARAM FILTER.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 38,
+            "name": "Camel Ungu",
+            "description": "ROKOK FILTER ISI 20 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6000,
+            "image": "assets/images/CAMEL UNGU.png",
+            "icon": "💜"
+        },
+        {
+            "id": 39,
+            "name": "Camel Connect",
+            "description": "ROKOK FILTER ISI 20 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6300,
+            "image": "assets/images/CAMEL CONNECT.png",
+            "icon": "🚬"
+        },
+        {
+            "id": 40,
+            "name": "Nestlite",
+            "description": "ROKOK FILTER ISI 20 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6500,
+            "image": "assets/images/NESTLITE.png",
+            "icon": "🍃"
+        },
+        {
+            "id": 41,
+            "name": "Magnum",
+            "description": "ROKOK FILTER ISI 16 = 1 PACK ISI 10 BUNGKUS",
+            "price": 6100,
+            "image": "assets/images/MAGNUM.png",
+            "icon": "🚬"
         }
     ]
 }
